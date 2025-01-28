@@ -2,9 +2,10 @@
   {
     "id": "1738091725756",
     "name": "Amareto de Castanha do Pará",
-    "quantity": 0,
+    "quantity": 5,
     "unit": "QTD",
-    "createdAt": "2025-01-28T19:15:25.000Z"
+    "createdAt": "2025-01-28T19:15:25.000Z",
+    "updatedAt": "2025-01-28T20:08:14.605Z"
   },
   {
     "id": "1738091725757",
@@ -23,9 +24,10 @@
   {
     "id": "1738091725759",
     "name": "Amendoa Defumada",
-    "quantity": 0,
-    "unit": "QTD",
-    "createdAt": "2025-01-28T19:15:25.003Z"
+    "quantity": 6,
+    "unit": "KG",
+    "createdAt": "2025-01-28T19:15:25.003Z",
+    "updatedAt": "2025-01-28T20:08:25.182Z"
   },
   {
     "id": "1738091725760",
