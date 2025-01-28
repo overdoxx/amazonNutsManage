@@ -1,0 +1,15 @@
+<!-- views/error.ejs -->
+<%- contentFor('body') %>
+
+<div class="max-w-2xl mx-auto mt-8 p-6 bg-white rounded-lg shadow-md">
+  <h1 class="text-3xl font-bold text-red-600 mb-4">Erro <%= statusCode %></h1>
+  <p class="text-xl mb-4"><%= message %></p>
+  <% if (process.env.NODE_ENV === 'development' && error.stack) { %>
+    <pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto">
+      <%= error.stack %>
+    </pre>
+  <% } %>
+  <a href="/" class="mt-6 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">
+    Voltar para a página inicial
+  </a>
+</div>

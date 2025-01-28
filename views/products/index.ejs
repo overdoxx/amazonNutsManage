@@ -1,0 +1,108 @@
+<%- contentFor('body') %>
+
+<div class="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-8 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4 mb-8">
+      <div>
+        <h1 class="text-3xl font-bold text-gray-900 text-center md:text-left flex items-center gap-2">
+          Controle de Estoque
+        </h1>
+        <p class="mt-1 text-sm text-gray-500 text-center md:text-left">Gerencie seus produtos de forma eficiente</p>
+      </div>
+      
+      <div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+        <div class="relative flex-grow md:flex-grow-0">
+          <input 
+            type="text" 
+            id="search" 
+            placeholder="Pesquisar produto..." 
+            class="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
+            oninput="searchProducts()"
+          />
+        </div>
+        
+        <div class="flex gap-2 sm:gap-4">
+          <button 
+            onclick="openAddModal()" 
+            class="flex-1 sm:flex-none bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 active:bg-green-800 transition-all duration-200 shadow-sm hover:shadow-md font-medium flex items-center gap-2"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus h-5 w-5">
+              <path d="M12 5v14M5 12h14"></path>
+            </svg>
+            Adicionar Produto
+          </button>
+          
+          <a 
+            href="/products/export" 
+            class="flex-1 sm:flex-none inline-flex items-center justify-center bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-sm hover:shadow-md font-medium flex items-center gap-2"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text h-5 w-5">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <path d="m3 9 2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9"></path>
+              <path d="M12 3v6"></path>
+            </svg>
+            Exportar Excel
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
+      <% if (products.length === 0) { %>
+        <div class="flex flex-col items-center justify-center py-12">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-package2 h-10 w-10 text-gray-500">
+            <path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z"></path>
+            <path d="m3 9 2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9"></path>
+            <path d="M12 3v6"></path>
+          </svg>
+      
+          <div class="text-gray-400 text-lg mb-2">Nenhum produto cadastrado</div>
+          <p class="text-gray-500 text-sm">Clique em "Adicionar Produto" para começar</p>
+        </div>
+      <% } else { %>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <% products.forEach(product => { %>
+            <div class="bg-gray-100 rounded-lg p-6 border border-gray-300 hover:border-amber-300 transition-all duration-200 hover:shadow-md group flex flex-col items-center justify-between">
+              <div class="flex justify-center items-start mb-4 w-full">
+                <h3 class="text-xl font-semibold text-gray-800 group-hover:text-amber-600 transition-colors text-center">
+                  <%= product.name %>
+                </h3>
+              </div>
+              
+              <div class="mb-6 text-center">
+                <div class="flex items-baseline justify-center">
+                  <span class="text-2xl font-bold text-gray-900">
+                    <%= product.quantity.toLocaleString('pt-BR', { minimumFractionDigits: product.unit === 'KG' ? 2 : 0, maximumFractionDigits: product.unit === 'KG' ? 2 : 0 }) %>
+                  </span>
+                  <span class="ml-1 text-gray-500">
+                    <%= product.unit === 'KG' ? 'kg' : 'unidades' %>
+                  </span>
+                </div>
+              </div>
+              
+              <div class="flex gap-4 w-full justify-center mt-4">
+                <button 
+                  onclick="openEditModal('<%= product.id %>', '<%= product.name %>', '<%= product.quantity %>', '<%= product.unit %>')"
+                  class="bg-amber-500 text-white px-6 py-3 rounded-lg hover:bg-amber-600 active:bg-amber-700 transition-all duration-200 font-medium flex items-center justify-center gap-2"
+                >
+                  Editar
+                </button>
+                
+                <form action="/products/delete/<%= product.id %>" method="POST" class="w-full sm:w-auto">
+                  <button 
+                    type="button" 
+                    onclick="openDeleteModal('<%= product.id %>')"
+                    class="bg-red-500 text-white px-6 py-3 rounded-lg hover:bg-red-600 active:bg-red-700 transition-all duration-200 font-medium flex items-center justify-center gap-2"
+                  >
+                    Deletar
+                  </button>
+                </form>
+              </div>
+            </div>
+          <% }) %>
+        </div>
+      <% } %>
+    </div>
+  </div>
+</div>

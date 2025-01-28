@@ -1,0 +1,103 @@
+<!-- Modal Adicionar -->
+<div id="addModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+    <div class="bg-white p-8 rounded-xl w-full max-w-md shadow-2xl transform transition-all ease-in-out duration-300 scale-95 opacity-0">
+        <h2 class="text-2xl font-bold mb-6 text-gray-800">Adicionar Produto</h2>
+        <form action="/products/add" method="POST">
+            <div class="space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nome do Produto</label>
+                    <input type="text" id="name" name="name" required
+                           class="w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition duration-200 text-gray-900">
+                </div>
+                <div>
+                    <label for="unit" class="block text-sm font-medium text-gray-700 mb-1">Unidade de Medida</label>
+                    <select id="unit" name="unit" required onchange="updateUnitLabel(this, 'unitLabel')"
+                            class="w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition duration-200 text-gray-900">
+                        <option value="QTD">Quantidade (Unidades)</option>
+                        <option value="KG">Quilogramas (KG)</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="quantity" class="block text-sm font-medium text-gray-700 mb-1">Quantidade</label>
+                    <div class="flex items-center gap-2">
+                        <input type="number" id="quantity" name="quantity" step="0.01" min="0" required
+                               class="flex-1 px-4 py-2 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition duration-200 text-gray-900">
+                        <span id="unitLabel" class="text-gray-700 w-16 text-center">unid.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-end gap-4 mt-8">
+                <button type="button" onclick="closeAddModal()"
+                        class="px-6 py-2 border border-gray-300 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition duration-200 text-gray-700">
+                    Cancelar
+                </button>
+                <button type="submit"
+                        class="px-6 py-2 bg-amber-600 text-white rounded-lg hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 transition duration-200">
+                    Adicionar
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal Editar -->
+<div id="editModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+    <div class="bg-white p-8 rounded-xl w-full max-w-md shadow-2xl transform transition-all ease-in-out duration-300 scale-95 opacity-0">
+        <h2 class="text-2xl font-bold mb-6 text-gray-800">Editar Produto</h2>
+        <form id="editForm" action="/products/edit/" method="POST">
+            <div class="space-y-6">
+                <div>
+                    <label for="editName" class="block text-sm font-medium text-gray-700 mb-1">Nome do Produto</label>
+                    <input type="text" id="editName" name="name" required
+                           class="w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition duration-200 text-gray-900">
+                </div>
+                <div>
+                    <label for="editUnit" class="block text-sm font-medium text-gray-700 mb-1">Unidade de Medida</label>
+                    <select id="editUnit" name="unit" required onchange="updateUnitLabel(this, 'editUnitLabel')"
+                            class="w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition duration-200 text-gray-900">
+                        <option value="QTD">Quantidade (Unidades)</option>
+                        <option value="KG">Quilogramas (KG)</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="editQuantity" class="block text-sm font-medium text-gray-700 mb-1">Quantidade</label>
+                    <div class="flex items-center gap-2">
+                        <input type="number" id="editQuantity" name="quantity" step="0.01" min="0" required
+                               class="flex-1 px-4 py-2 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition duration-200 text-gray-900">
+                        <span id="editUnitLabel" class="text-gray-700 w-16 text-center">unid.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-end gap-4 mt-8">
+                <button type="button" onclick="closeEditModal()"
+                        class="px-6 py-2 border border-gray-300 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition duration-200 text-gray-700">
+                    Cancelar
+                </button>
+                <button type="submit"
+                        class="px-6 py-2 bg-amber-600 text-white rounded-lg hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 transition duration-200">
+                    Salvar
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal Deletar -->
+<div id="deleteModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+    <div class="bg-white p-8 rounded-xl w-full max-w-md shadow-2xl transform transition-all ease-in-out duration-300 scale-95 opacity-0">
+        <h2 class="text-2xl font-bold mb-4 text-gray-800">Excluir Produto</h2>
+        <p class="text-gray-600 mb-6">Tem certeza que deseja excluir este produto? Esta ação não pode ser desfeita.</p>
+        <div class="flex justify-end gap-4">
+            <button type="button" onclick="closeDeleteModal()"
+                    class="px-6 py-2 border border-gray-300 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition duration-200 text-gray-700">
+                Cancelar
+            </button>
+            <form id="deleteForm" action="" method="POST">
+                <button type="submit"
+                        class="px-6 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition duration-200">
+                    Deletar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

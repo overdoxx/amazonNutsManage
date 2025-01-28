@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Nuts - <%= title %></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ff6600',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+
+    <main class="flex-grow container mx-auto px-4 max-w-8xl"> 
+        <%- body %>
+    </main>
+
+    <%- include('../partials/_modals') %>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

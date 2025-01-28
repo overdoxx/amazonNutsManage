@@ -1,0 +1,458 @@
+[
+  {
+    "id": "1738091725756",
+    "name": "Amareto de Castanha do Pará",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.000Z"
+  },
+  {
+    "id": "1738091725757",
+    "name": "Ameixa Seca sem Caroço",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.001Z"
+  },
+  {
+    "id": "1738091725758",
+    "name": "Amendoa Crua",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.002Z"
+  },
+  {
+    "id": "1738091725759",
+    "name": "Amendoa Defumada",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.003Z"
+  },
+  {
+    "id": "1738091725760",
+    "name": "Amendoa Laminada",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.004Z"
+  },
+  {
+    "id": "1738091725761",
+    "name": "Amendoa Torrada Salgada",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.005Z"
+  },
+  {
+    "id": "1738091725762",
+    "name": "Amendoim com Alho",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.006Z"
+  },
+  {
+    "id": "1738091725763",
+    "name": "Amendoim com Pele Salgado",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.007Z"
+  },
+  {
+    "id": "1738091725764",
+    "name": "Amendoim sem Pele Salgado",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.008Z"
+  },
+  {
+    "id": "1738091725765",
+    "name": "Amendoim sem Pele sem Sal",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.009Z"
+  },
+  {
+    "id": "1738091725766",
+    "name": "Aveia Floco Fino",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.010Z"
+  },
+  {
+    "id": "1738091725767",
+    "name": "Banana Chips Salgada",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.011Z"
+  },
+  {
+    "id": "1738091725768",
+    "name": "Batata Chips Doce",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.012Z"
+  },
+  {
+    "id": "1738091725770",
+    "name": "Bicarbonato de Sódio",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.014Z"
+  },
+  {
+    "id": "1738091725771",
+    "name": "Biscoito Cacau Light",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.015Z"
+  },
+  {
+    "id": "1738091725772",
+    "name": "Biscoito Coco Light",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.016Z"
+  },
+  {
+    "id": "1738091725773",
+    "name": "Biscoito Linhaça/Açafrão",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.017Z"
+  },
+  {
+    "id": "1738091725774",
+    "name": "Biscoito Mil Folhas",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.018Z"
+  },
+  {
+    "id": "1738091725775",
+    "name": "Castanha de Caju com Sal",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.019Z"
+  },
+  {
+    "id": "1738091725776",
+    "name": "Castanha de Caju sem Sal",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.020Z"
+  },
+  {
+    "id": "1738091725777",
+    "name": "Castanha do Pará Large",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.021Z"
+  },
+  {
+    "id": "1738091725778",
+    "name": "Chá Camomila",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.022Z"
+  },
+  {
+    "id": "1738091725779",
+    "name": "Chá Capim Santo",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.023Z"
+  },
+  {
+    "id": "1738091725780",
+    "name": "Chá Cavalinha",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.024Z"
+  },
+  {
+    "id": "1738091725781",
+    "name": "Chá de Hibisco",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.025Z"
+  },
+  {
+    "id": "1738091725782",
+    "name": "Chá Verde",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.026Z"
+  },
+  {
+    "id": "1738091725783",
+    "name": "Coco Chips sem Açúcar",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.027Z"
+  },
+  {
+    "id": "1738091725784",
+    "name": "Cranberry",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.028Z"
+  },
+  {
+    "id": "1738091725785",
+    "name": "Cúrcuma em Pó",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.029Z"
+  },
+  {
+    "id": "1738091725786",
+    "name": "Damasco",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.030Z"
+  },
+  {
+    "id": "1738091725787",
+    "name": "Drageado de Amarula",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.031Z"
+  },
+  {
+    "id": "1738091725788",
+    "name": "Drageado de Amendoas",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.032Z"
+  },
+  {
+    "id": "1738091725789",
+    "name": "Drageado de Conhaque",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.033Z"
+  },
+  {
+    "id": "1738091725791",
+    "name": "Enroladinho Lima Pérsia",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.035Z"
+  },
+  {
+    "id": "1738091725792",
+    "name": "Farelo de Aveia",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.036Z"
+  },
+  {
+    "id": "1738091725793",
+    "name": "Farinha de Amendoa",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.037Z"
+  },
+  {
+    "id": "1738091725795",
+    "name": "Farinha de Aveia",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.039Z"
+  },
+  {
+    "id": "1738091725796",
+    "name": "Fettine",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.040Z",
+    "updatedAt": "2025-01-28T19:18:24.636Z"
+  },
+  {
+    "id": "1738091725798",
+    "name": "Gergilim Preto",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.042Z"
+  },
+  {
+    "id": "1738091725799",
+    "name": "Leite de Coco em Pó",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.043Z"
+  },
+  {
+    "id": "1738091725800",
+    "name": "Milho com Mostarda e Mel",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.044Z"
+  },
+  {
+    "id": "1738091725801",
+    "name": "Mix de Castanhas Agridoce",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.045Z"
+  },
+  {
+    "id": "1738091725802",
+    "name": "Mix de Castanhas Naturais",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.046Z"
+  },
+  {
+    "id": "1738091725803",
+    "name": "Mix de Vegetais Desidratados",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.047Z"
+  },
+  {
+    "id": "1738091725805",
+    "name": "Noz Pecan",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.049Z"
+  },
+  {
+    "id": "1738091725806",
+    "name": "Noz Quartz",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.050Z"
+  },
+  {
+    "id": "1738091725807",
+    "name": "Palito de Parmesão",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.051Z"
+  },
+  {
+    "id": "1738091725808",
+    "name": "Páprica Defumada",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.052Z"
+  },
+  {
+    "id": "1738091725809",
+    "name": "Pistache Cru",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.053Z"
+  },
+  {
+    "id": "1738091725810",
+    "name": "Pó de Guaraná",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.054Z"
+  },
+  {
+    "id": "1738091725811",
+    "name": "Provolone Desidratado",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.055Z"
+  },
+  {
+    "id": "1738091725812",
+    "name": "Psyllium",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.056Z"
+  },
+  {
+    "id": "1738091725813",
+    "name": "Quinoa Grão",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.057Z"
+  },
+  {
+    "id": "1738091725814",
+    "name": "Sal Rosa do Himalaia",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.058Z"
+  },
+  {
+    "id": "1738091725815",
+    "name": "Semente de Abóbora",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.059Z"
+  },
+  {
+    "id": "1738091725816",
+    "name": "Semente de Chia",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.060Z"
+  },
+  {
+    "id": "1738091725817",
+    "name": "Semente de Girassol",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.061Z"
+  },
+  {
+    "id": "1738091725818",
+    "name": "Semente de Linhaça",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.062Z"
+  },
+  {
+    "id": "1738091725819",
+    "name": "Tâmara Jumbo",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.063Z"
+  },
+  {
+    "id": "1738091725820",
+    "name": "Tempero Chimichurri",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.064Z"
+  },
+  {
+    "id": "1738091725821",
+    "name": "Tempero Edu Guedes",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.065Z"
+  },
+  {
+    "id": "1738091725822",
+    "name": "Uva Passa Preta",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:15:25.066Z"
+  },
+  {
+    "id": "1738092201370",
+    "name": "Snack Arroz C/Barbecue",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:23:21.370Z"
+  },
+  {
+    "id": "1738092220256",
+    "name": "Ervilha com Wasabi",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:23:40.256Z"
+  },
+  {
+    "id": "1738092258684",
+    "name": "Semente de Abobora C/Sal",
+    "quantity": 0,
+    "unit": "QTD",
+    "createdAt": "2025-01-28T19:24:18.684Z"
+  }
+]
